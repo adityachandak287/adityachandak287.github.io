@@ -8,6 +8,8 @@ class App extends Component {
         <BackgroundSketch />
         <div className="test">
           <h1>Aditya Chandak</h1>
+          <p>I beleive technology can be used to better our lives.</p>
+          <p>Interested in all things tech.</p>
         </div>
       </div>
     );
