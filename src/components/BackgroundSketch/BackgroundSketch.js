@@ -19,10 +19,11 @@ export class BackgroundSketch extends Component {
     // p.fillColor = null;
     p.points = [];
 
+    const currentArea = p.windowWidth * p.windowHeight;
     p.numberOfPoints = p.ceil(
-      p.map(p.windowWidth * p.windowHeight, 360 * 640, 1280 * 720, 5, 10)
+      p.map(currentArea, 360 * 640, 1920 * 1080, 5, 12, [true])
     );
-    console.log(p.numberOfPoints);
+    console.log(p.numberOfPoints, currentArea);
     p.setup = () => {
       // const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
       // const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
