@@ -2,17 +2,51 @@
   margin: 0;
 }
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 
-.test {
+.App {
+  background-color: black;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.flex-row-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.intro {
   color: white;
-  padding-top: 2em;
-  margin: 0;
-  /* width: 400px;
-  height: 2000px;
-  background-color: tomato; */
   text-align: center;
+}
+
+.intro-main {
+  font-size: 6vmin;
+}
+
+.intro-content {
+  font-size: 4vmin;
+}
+
+.intro-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  font-size: 6vmin;
+}
+
+.intro-announcement {
+  font-size: 3vmin;
 }
 
 canvas {
@@ -22,8 +56,10 @@ canvas {
 }
 
 ::selection {
-  background: tomato; /* WebKit/Blink Browsers */
+  background: #ffffff; /* WebKit/Blink Browsers */
+  color: black;
 }
 ::-moz-selection {
-  background: tomato; /* Gecko Browsers */
+  background: #ffffff; /* Gecko Browsers */
+  color: black;
 }
